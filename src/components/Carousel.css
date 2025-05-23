@@ -1,0 +1,57 @@
+/* 
+@media (min-height:700px) {
+    .carousel-item{
+        height: 685px;
+    }
+}
+
+@media (max-height:500px) {
+    .carousel-item{
+        height: 400px;
+    }
+    #caption{
+        width:70%;
+        height:30%;
+    }
+} */
+
+/* .carousel-item{
+    height: 685px;
+} */
+
+@media (max-width: 768px) {
+    .carousel-item {
+      height: 300px; /* Smaller height for mobile */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .carousel-item {
+      height: 685px /* Default height for larger screens */
+    }
+  }
+
+.carousel{
+    position:relative;
+    z-index: 10;
+    width:100%;
+}
+
+/* Fixed height for carousel */
+.carousel-item {
+    /* You can change this value as needed */
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  /* Optional: Adjust carousel image size to fit the container */
+  .carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the carousel space without distortion */
+  }
+
+#caption{
+    /* width:70%;
+    height:13%; */
+    margin-bottom:30px;
+}
